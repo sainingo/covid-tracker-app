@@ -19,3 +19,7 @@
     color: lawngreen;
     font-weight: 700;
 }
+
+.list-group-item {
+    cursor: pointer;
+}
