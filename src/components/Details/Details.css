@@ -1,0 +1,21 @@
+.continent-info {
+    text-align: center;
+    padding: 2rem 2rem;
+    color: aqua;
+}
+
+.continent-info > h1 {
+    font-size: 3.4rem;
+    color: whitesmoke;
+}
+
+.continent-info > strong {
+    font-size: larger;
+}
+
+.continent-info > p {
+    font-size: 1.4rem;
+    padding: 1rem;
+    color: lawngreen;
+    font-weight: 700;
+}
