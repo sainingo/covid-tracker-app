@@ -1,0 +1,48 @@
+.continent-row {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.row-data {
+    padding: 15rem 12rem;
+    /* border: 0.01rem solid rgb(158, 8, 100); */
+    margin: 3rem 2rem;
+    background-image: url('../../assets/africa-png.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30rem;
+    height: 25rem;
+    color: #fff;
+    transition: all 0.03 ease-in;
+}
+
+.row-data:hover {
+    transform: scale(1.01);
+    margin-top: 2rem;
+}
+
+.row-data > h2 {
+    font-size: 3.1rem;
+    margin-top: 1rem;
+}
+
+.row-data > p {
+    font-size: 2.2rem;
+}
+
+@media screen and (max-width: 48rem) {
+    .continent-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .row-data {
+        padding: 5rem 3rem;
+        margin: 2rem 3rem;
+        width: 25rem;
+        height: 20rem;
+        color: #fff;
+        transition: all 0.03 ease-in;
+    }
+}

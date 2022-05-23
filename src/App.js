@@ -1,11 +1,12 @@
 import './App.css';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
 
 function App() {
   return (
     <div>
-      <h1 className="text-2xl text-center font-bold underline">
-        Covid tracker App
-      </h1>
+      <Header />
+      <Home />
     </div>
   );
 }
