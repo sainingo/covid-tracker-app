@@ -1,12 +1,22 @@
 .continent-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
+}
+
+.bi {
+    font-size: 3.2rem;
+    color: blanchedalmond;
+}
+
+.bi:hover {
+    color: azure;
+    cursor: pointer;
 }
 
 .row-data {
-    padding: 15rem 12rem;
-    /* border: 0.01rem solid rgb(158, 8, 100); */
+    padding: 15rem 9rem;
     margin: 3rem 2rem;
     background-image: url('../../assets/africa-png.png');
     background-size: contain;
@@ -26,10 +36,17 @@
 .row-data > h2 {
     font-size: 3.1rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .row-data > p {
     font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.row-data > p span {
+    color: rgb(40, 174, 236);
+    font-weight: 600;
 }
 
 @media screen and (max-width: 48rem) {
