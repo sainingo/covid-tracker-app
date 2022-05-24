@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => (
@@ -8,7 +9,10 @@ const Header = () => (
         <a href="/" className="navbar-brand">Covid Tracker</a>
         <form className="d-flex" role="search">
           <input className="form-control me-4" type="search" placeholder="Search your country" aria-label="Search" />
-          <button className="btn btn-outline-success" type="submit">Search</button>
+          <Link to="/search">
+            {' '}
+            <button className="btn btn-outline-success" type="submit">Search</button>
+          </Link>
         </form>
       </div>
     </nav>

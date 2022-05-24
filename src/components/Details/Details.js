@@ -1,41 +1,54 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Details.css';
+import { useDispatch } from 'react-redux';
+import { getCountries } from '../../redux/features/countriesSlice';
+import handleCountries from '../../redux/features/countryData';
 
-const Details = () => (
-  <div className="container">
-    <div className="continent-info">
-      <h1>AFRICAN CONTINENT</h1>
-      <strong>Total Deaths: 50000</strong>
-      <p>Most Affected Country: Nigeria</p>
+const Details = () => {
+  const dispatch = useDispatch();
+  // const allCountries = useSelector((state) => state.country);
+
+  useEffect(() => {
+    dispatch(getCountries());
+  }, [dispatch]);
+  const continent = JSON.parse(localStorage.getItem('item'));
+  const filteredData = handleCountries(continent);
+
+  return (
+    <div className="country-row  grid">
+      {filteredData.map((country) => (
+        <div
+          style={{
+            backgroundImage: `url(${country.flag})`, backgroundRepeat: 'no-repeat', backgroundSize: '150px 100px', backgroundPosition: 'left bottom',
+          }}
+          key={country.id}
+          className="country-data shadow p-3 mb-5 rounded"
+        >
+          <h2>{country.countyName}</h2>
+          <p>
+            Total Deaths:
+            {' '}
+            <span>
+              {' '}
+              {country.deaths}
+            </span>
+          </p>
+          <h5>
+            Cases:
+            {' '}
+            {country.cases}
+          </h5>
+          <h3>
+            Recovered:
+            {' '}
+            {country.recovered}
+          </h3>
+
+        </div>
+      ))}
+
     </div>
-
-    <div id="countries-row" className="countries-row">
-      <ol id="list-group" className="list-group list-group-numbered">
-        <li className="list-group-item list-group-item-danger d-flex justify-content-between align-items-start">
-          <div className="ms-2 me-auto">
-            <div className="fw-bold">Algeria</div>
-            Total Deaths: 123451
-          </div>
-          <span className="badge bg-primary rounded-pill">14</span>
-        </li>
-        <li className="list-group-item d-flex justify-content-between align-items-start">
-          <div className="ms-2 me-auto">
-            <div className="fw-bold">Algeria</div>
-            Total Deaths: 123451
-          </div>
-          <span className="badge bg-primary rounded-pill">14</span>
-        </li>
-        <li className="list-group-item list-group-item-info d-flex justify-content-between align-items-start">
-          <div className="ms-2 me-auto">
-            <div className="fw-bold">Algeria</div>
-            Total Deaths: 123451
-          </div>
-          <span className="badge bg-primary rounded-pill">14</span>
-        </li>
-      </ol>
-    </div>
-
-  </div>
-);
+  );
+};
 
 export default Details;
