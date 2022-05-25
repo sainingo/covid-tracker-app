@@ -4,15 +4,19 @@
 
 > The coronavirus COVID-19 is affecting 228 countries and territories. So this simple app will display a stats of all countries and continents in the world
 
+
+## ![Uploading ps1.jpg…]()
+
 ## Built With
 
 - React
 - Redux toolkit
 - API
 
-## 
 
 ## [Live Demo Link](https://livedemo.com)
+
+
 
 ## Built With
 
