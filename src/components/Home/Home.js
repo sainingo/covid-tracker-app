@@ -17,23 +17,26 @@ const Home = () => {
     localStorage.setItem('item', JSON.stringify(name));
   };
   return (
-    <div className="continent-row grid">
-      {allContinents.map((continent) => (
-        <div key={continent.id} className="row-data shadow p-3 mb-5 rounded">
-          <h2>{continent.name}</h2>
-          <p>
-            Total Deaths:
-            {' '}
-            <span>
+    <>
+      <h4>Worlds Live Stats:</h4>
+      <div className="continent-row grid">
+        {allContinents.map((continent) => (
+          <div key={continent.id} className="row-data shadow p-3 mb-5 rounded">
+            <h2>{continent.name}</h2>
+            <p>
+              Total Deaths:
               {' '}
-              {continent.deaths}
-            </span>
-          </p>
-          <Link to="/details"><button id={continent.id} onClick={() => hancleClick(continent.name)} className="btn-continents" type="button"><i aria-label="Mute volume" className="bi bi-arrow-right-circle" /></button></Link>
-        </div>
-      ))}
+              <span>
+                {' '}
+                {continent.deaths}
+              </span>
+            </p>
+            <Link to="/details"><button id={continent.id} onClick={() => hancleClick(continent.name)} className="btn-continents" type="button"><i aria-label="Mute volume" className="bi bi-arrow-right-circle" /></button></Link>
+          </div>
+        ))}
 
-    </div>
+      </div>
+    </>
   );
 };
 
