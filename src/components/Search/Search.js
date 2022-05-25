@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import './Details.css';
+import '../Details/Details.css';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { getCountries } from '../../redux/features/countriesSlice';
 import handleCountries from '../../redux/features/countryData';
 
-const Details = () => {
+function Search() {
   const dispatch = useDispatch();
   const [search, setSearch] = useState('');
 
@@ -18,14 +19,16 @@ const Details = () => {
     setSearch(e.target.value);
   };
 
+  const searchCountry = filteredData.filter((contry) => contry.countyName === search);
+
   return (
     <>
       <div className="search-inputs">
         <input value={search} onChange={handleSearch} type="search" placeholder="Search a country" />
-        <button type="button">Search</button>
+        <Link to="/search"><button type="button">Search</button></Link>
       </div>
       <div className="country-row  grid">
-        {filteredData.map((country) => (
+        {searchCountry.map((country) => (
           <div
             style={{
               backgroundImage: `url(${country.flag})`, backgroundRepeat: 'no-repeat', backgroundSize: '150px 100px', backgroundPosition: 'left bottom',
@@ -59,6 +62,6 @@ const Details = () => {
       </div>
     </>
   );
-};
+}
 
-export default Details;
+export default Search;
