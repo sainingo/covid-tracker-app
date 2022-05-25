@@ -4,9 +4,7 @@
 
 > The coronavirus COVID-19 is affecting 228 countries and territories. So this simple app will display a stats of all countries and continents in the world
 
-
 ![ps1](https://user-images.githubusercontent.com/32932447/170242121-ef310f48-691d-4083-81e6-6ef0ee3016d2.jpg)
-
 
 ## Built With
 
@@ -14,12 +12,9 @@
 - Redux toolkit
 - API
 
-
 ## [Live Link](https://global-19-tracker.netlify.app/)
 
-## [Live Demo Link](https://www.loom.com/share/0a4b163950cc47a1bec3f31c8b3b80df)
-
-
+## [Project Presentation](https://www.loom.com/share/0a4b163950cc47a1bec3f31c8b3b80df)
 
 ## Built With
 
@@ -78,6 +73,12 @@ For more details, see [the Installation docs page](https://redux.js.org/introduc
 - GitHub: [@sainingo](https://github.com/sainingo)
 - Twitter: [@sainingo](https://www.linkedin.com/in/sainingo/)
 - LinkedIn: [sainingo](https://twitter.com/saningoInn)
+
+## Acknowledgments
+
+- [Microverse](https://www.microverse.org/)
+- External API from https://disease.sh/docs/#/
+- Original design idea (Ballhead App (Free PSDs)) by Nelson Sakwa [Website](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)>)
 
 ## 🤝 Contributing
 

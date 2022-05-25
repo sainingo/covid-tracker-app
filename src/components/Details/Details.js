@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Details.css';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { getCountries } from '../../redux/features/countriesSlice';
 import handleCountries from '../../redux/features/countryData';
 
@@ -21,6 +22,7 @@ const Details = () => {
   return (
     <>
       <div className="search-inputs">
+        <Link to="/"><button className="go-back" type="button">Back</button></Link>
         <input value={search} onChange={handleSearch} type="search" placeholder="Search a country" />
         <button type="button">Search</button>
       </div>

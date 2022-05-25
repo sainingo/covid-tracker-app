@@ -31,7 +31,7 @@ const Home = () => {
                 {continent.deaths}
               </span>
             </p>
-            <Link to="/details"><button id={continent.id} onClick={() => hancleClick(continent.name)} className="btn-continents" type="button"><i aria-label="Mute volume" className="bi bi-arrow-right-circle" /></button></Link>
+            <Link to={`/details/${continent.name}`}><button id={continent.id} onClick={() => hancleClick(continent.name)} className="btn-continents" type="button"><i aria-label="Mute volume" className="bi bi-arrow-right-circle" /></button></Link>
           </div>
         ))}
 
