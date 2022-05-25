@@ -5,7 +5,8 @@
 > The coronavirus COVID-19 is affecting 228 countries and territories. So this simple app will display a stats of all countries and continents in the world
 
 
-## ![Uploading ps1.jpg…]()
+![ps1](https://user-images.githubusercontent.com/32932447/170242121-ef310f48-691d-4083-81e6-6ef0ee3016d2.jpg)
+
 
 ## Built With
 
@@ -14,7 +15,7 @@
 - API
 
 
-## [Live Demo Link](https://livedemo.com)
+## [Live Demo Link](https://global-19-tracker.netlify.app/)
 
 
 
