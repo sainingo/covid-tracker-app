@@ -15,7 +15,9 @@
 - API
 
 
-## [Live Demo Link](https://global-19-tracker.netlify.app/)
+## [Live Link](https://global-19-tracker.netlify.app/)
+
+## [Live Demo Link](https://www.loom.com/share/0a4b163950cc47a1bec3f31c8b3b80df)
 
 
 
