@@ -1,0 +1,152 @@
+.country-row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.bi {
+    font-size: 3.2rem;
+    color: blanchedalmond;
+    cursor: pointer;
+}
+
+.bi:hover {
+    color: azure;
+    cursor: pointer;
+}
+
+input {
+    width: 40rem;
+    padding: 0.5rem;
+    border-radius: 0.5em;
+    border: 0.1em solid gray;
+}
+input:focus {
+    outline: none;
+}
+
+.country-data {
+    padding: 15rem 9rem;
+    margin: 3rem 2rem;
+    width: 25rem;
+    height: 20rem;
+    color: #fff;
+    transition: all 0.03 ease-in;
+}
+
+h3 {
+    color: darkturquoise;
+}
+
+.row-data:hover {
+    transform: scale(1.01);
+    margin-top: 2rem;
+}
+
+.country-data > h2 {
+    font-size: 1.7rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    /* color: cadetblue; */
+    color: cornflowerblue;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.country-data > p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: aquamarine;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.country-data > p span {
+    color: thistle;
+    font-weight: 600;
+}
+
+.btn-continents {
+    background: none;
+    border: none;
+}
+.search-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.5rem;
+}
+.search-inputs > button {
+    width: 8rem;
+    padding: 0.5rem;
+    border-radius: 0.5em;
+    border: 0.1em solid gray;
+    background-color: blueviolet;
+    color: #fff;
+    font-size: larger;
+}
+
+.go-back {
+    width: 8rem;
+    padding: 0.5rem;
+    border-radius: 0.5em;
+    border: 0.1em solid gray;
+    background-color: cadetblue;
+    color: #fff;
+    font-size: larger;
+    align-self: flex-start;
+}
+
+@media screen and (max-width: 48rem) {
+    .continent-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .country-data {
+        padding: 2rem 3rem;
+        margin: 2rem 3rem;
+        width: 22rem;
+        height: 18rem;
+        color: #fff;
+        transition: all 0.03 ease-in;
+    }
+
+    .country-data > h2 {
+        font-size: 2.8rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+        color: cornflowerblue;
+        font-weight: 900;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .country-data > p {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        font-weight: 800;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .country-data > p span {
+        color: thistle;
+        font-weight: 600;
+    }
+
+    input {
+        width: 15rem;
+        padding: 0.5rem;
+        border-radius: 0.5em;
+        margin-top: 0.2rem;
+        border: 0.1em solid gray;
+    }
+    .search-inputs > button {
+        width: 5rem;
+        padding: 0.2rem;
+        border-radius: 0.5em;
+        border: 0.1em solid gray;
+        background-color: blueviolet;
+        color: #fff;
+        font-size: larger;
+        margin-top: 0.2rem;
+    }
+}
